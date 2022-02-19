@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --sub-heading-color: #222;
+  --link-color: #444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.projects_list {
+  padding-left: 20px;
+  list-style-type: "◻";
+}
+
+.project_item {
+  font-size: 18px;
+  padding-left: 5px;
+  margin-bottom: 8px;
+}
+
+.project_item a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-color);
+}
