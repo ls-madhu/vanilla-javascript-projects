@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --sub-heading-color: #222;
+  --link-color: #444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.book-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.form-group > input,
+.add-btn {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-group:last-of-type > input {
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f88;
+  border: 2px solid #f88;
+  transition: background-color 1s ease, border 1s ease;
+}
+
+.add-btn:hover {
+  background-color: #f66;
+  border: 2px solid #f66;
+}
+
+.list-table {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.list-table tr:hover {
+  font-weight: 600;
+}
+
+.list-table,
+.list-table th,
+.list-table td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+.list-table th {
+  background-color: #f88;
+}
+
+.list-table tr:nth-of-type(n) {
+  background-color: #ddd;
+}
+
+.list-table tr:nth-of-type(2n) {
+  background-color: #eee;
+}
+
+.list-table thead {
+  font-size: 18px;
+  text-align: center;
+}
+
+.list-table th {
+  width: 30%;
+}
+
+.list-table th:last-of-type {
+  width: 10%;
+}
+
+.delete-btn {
+  text-decoration: none;
+}

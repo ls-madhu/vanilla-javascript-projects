@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">🧾BookList</h1>
+      <form class="book-form">
+        <div class="form-group">
+          <label for="book">Book</label>
+          <input type="text" name="book" id="book" required />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required />
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="number" name="isbn" id="isbn" required />
+        </div>
+        <input type="submit" value="ADD BOOK" class="add-btn" />
+      </form>
+      <table class="list-table">
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody class="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
