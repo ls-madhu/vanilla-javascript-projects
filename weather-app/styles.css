@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #171717;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/1600x900/?weather");
+}
+
+.card {
+  padding: 40px;
+  background-color: #000000dd;
+  border-radius: 30px;
+  margin: 20px;
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background: #7c7c7c2b;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+input.search_bar {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 50px);
+}
+
+.city {
+  margin-top: 20px;
+}
+
+.city,
+.humidity,
+.wind,
+.temp {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.city {
+  margin-bottom: 20px;
+}
+
+.description,
+.city {
+  text-transform: capitalize;
+}
+
+.description_container {
+  display: flex;
+  align-items: center;
+}
+
+.weather.loading {
+  display: none;
+}
