@@ -65,6 +65,15 @@ input.search_bar {
   width: calc(100% - 50px);
 }
 
+.error {
+  display: none;
+  background-color: #dc354555;
+  text-align: center;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
 .city {
   margin-top: 20px;
 }

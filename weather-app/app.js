@@ -5,7 +5,10 @@ const weather = {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
     )
       .then((response) => response.json())
-      .then((data) => this.displayWeather(data));
+      .then((data) => this.displayWeather(data))
+      .catch((e) => {
+        document.querySelector(".error").style.display = "block";
+      });
   },
   displayWeather: (data) => {
     const { name } = data;
@@ -21,6 +24,7 @@ const weather = {
     document.querySelector(".humidity").innerText = humidity + " %";
     document.querySelector(".wind").innerText = speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
+    document.querySelector(".error").style.display = "none";
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search_bar").value);
